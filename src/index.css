@@ -8,93 +8,94 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Core palette - HSL only */
-    --background: 0 0% 100%; /* White */
-    --foreground: 0 0% 10%; /* #1A1A1A */
+    /* Core palette - HSL only - Dark theme like Master Jornada R1 */
+    --background: 0 0% 0%; /* Black */
+    --foreground: 0 0% 100%; /* White */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
+    --card: 0 0% 5%; /* Very dark gray */
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
 
-    /* Brand tokens */
-    --brand-green: 123 46% 34%; /* #2E7D32 */
-    --brand-gold: 39 67% 53%;  /* #D8A038 */
+    /* Brand tokens - Master Jornada R1 colors */
+    --brand-gold: 45 100% 51%;  /* #FFD700 - Bright yellow/gold */
+    --brand-red: 0 100% 50%;    /* #FF0000 - Red for CTAs */
+    --brand-blue: 200 100% 50%; /* #0080FF - Light blue for secondary CTAs */
 
     /* Semantic tokens */
-    --primary: var(--brand-green);
-    --primary-foreground: 0 0% 100%;
+    --primary: var(--brand-gold);
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 0 0% 96%; /* light gray sections */
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 0 0% 10%; /* Dark gray sections */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 215.4 16.3% 35%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
     --accent: var(--brand-gold);
-    --accent-foreground: 0 0% 10%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 0 0% 10%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 45 100% 51%;
 
     --radius: 0.75rem;
 
     /* Sidebar (unused but kept consistent) */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: var(--brand-green);
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 0 0% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: var(--brand-gold);
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 45 100% 51%;
 
     /* Motion & elevation */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--brand-green) / 0.3);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--brand-gold) / 0.3);
     --shadow-glow: 0 0 40px hsl(var(--brand-gold) / 0.35);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 45 100% 51%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 45 100% 51%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 45 100% 51%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 45 100% 51%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 45 100% 51%;
   }
 }
 
@@ -131,5 +132,158 @@ All colors MUST be HSL.
   .story-link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+  
+  /* Estilos específicos para o modelo Master Jornada R1 */
+  .hero-headline {
+    @apply font-display font-extrabold uppercase leading-tight;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .section-title {
+    @apply font-display font-extrabold uppercase text-center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .icon-large {
+    @apply text-4xl mx-auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  }
+  
+  .testimonial-card {
+    @apply border-primary shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  .guarantee-badge {
+    @apply drop-shadow-2xl;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  }
+  
+  .cta-button {
+    @apply font-display text-lg px-10 py-4 shadow-lg hover:shadow-xl transition-all duration-200;
+  }
+  
+  /* Novos estilos para o modelo Master Jornada R1 */
+  .mj-hero {
+    @apply bg-background relative overflow-hidden;
+  }
+  
+  .mj-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, hsl(var(--primary) / 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  .mj-problem-item {
+    @apply flex items-start gap-4 p-4 rounded-lg bg-card/50 border border-border;
+  }
+  
+  .mj-benefit-number {
+    @apply text-6xl font-display font-extrabold text-primary;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .mj-feature-grid {
+    @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3;
+  }
+  
+  .mj-feature-card {
+    @apply bg-card/50 border border-border rounded-lg p-6 text-center hover:bg-card/70 transition-colors;
+  }
+  
+  .mj-testimonial {
+    @apply bg-card/30 border border-primary/20 rounded-lg p-6;
+  }
+  
+  .mj-cta-red {
+    @apply bg-red-600 hover:bg-red-700 text-white font-display font-bold px-8 py-4 rounded-lg transition-colors;
+  }
+  
+  .mj-cta-blue {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-display font-bold px-8 py-4 rounded-lg transition-colors;
+  }
+  
+  .mj-cta-yellow {
+    @apply bg-yellow-500 hover:bg-yellow-600 text-black font-display font-bold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105;
+  }
+  
+  .mj-price {
+    @apply text-4xl font-display font-extrabold text-primary;
+  }
+  
+  .mj-original-price {
+    @apply text-lg text-muted-foreground line-through;
+  }
+  
+  /* Melhorias de UX */
+  .mj-hero {
+    @apply bg-background relative overflow-hidden;
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--card)) 100%);
+  }
+  
+  .mj-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, hsl(var(--primary) / 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  .mj-problem-item {
+    @apply flex items-start gap-4 p-6 rounded-xl bg-card/50 border border-border hover:bg-card/70 transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .mj-benefit-number {
+    @apply text-6xl font-display font-extrabold text-primary;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .mj-feature-grid {
+    @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3;
+  }
+  
+  .mj-feature-card {
+    @apply bg-card/50 border border-border rounded-xl p-8 text-center hover:bg-card/70 transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .mj-testimonial {
+    @apply bg-card/30 border border-primary/20 rounded-xl p-8 hover:bg-card/50 transition-all duration-300;
+  }
+  
+  .section-title {
+    @apply font-display font-extrabold uppercase text-center mb-8;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero-headline {
+    @apply font-display font-extrabold uppercase leading-tight;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, hsl(var(--foreground)) 0%, hsl(var(--muted-foreground)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero-headline span {
+    -webkit-text-fill-color: initial;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
 }
